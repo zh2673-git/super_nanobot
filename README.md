@@ -94,7 +94,7 @@ nanobot onboard
   "providers": {
     "ollama": {
       "apiBase": "http://localhost:11434",
-      "defaultModel": "qwen2.5:4b",
+      "defaultModel": "qwen3.5:4b",
       "smallModelMode": true,
       "smallModelConfig": {
         "temperature": 0.7,
@@ -108,12 +108,14 @@ nanobot onboard
   },
   "agents": {
     "defaults": {
-      "model": "ollama/qwen2.5:4b",
+      "model": "ollama/qwen3.5:4b",
       "provider": "ollama"
     }
   }
 }
 ```
+
+> **注意**: OllamaPilot 默认使用 `qwen3.5:4b` 作为对话模型，`qwen3-embedding:0.6b` 作为嵌入模型。
 
 **使用 OpenRouter（云端模型）**
 
@@ -347,7 +349,7 @@ nanobot gateway
   "providers": {
     "ollama": {
       "apiBase": "http://localhost:11434",
-      "defaultModel": "qwen2.5:4b",
+      "defaultModel": "qwen3.5:4b",
       "smallModelMode": true,
       "smallModelConfig": {
         "temperature": 0.7,
@@ -361,7 +363,7 @@ nanobot gateway
   },
   "agents": {
     "defaults": {
-      "model": "ollama/qwen2.5:4b",
+      "model": "ollama/qwen3.5:4b",
       "provider": "ollama",
       "skills": ["enhanced_search", "graphrag"]
     }
